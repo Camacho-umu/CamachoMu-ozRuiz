@@ -52,7 +52,7 @@ k_brazos/
 | Brazos (k) | 10 |
 | Pasos (T) | 1000 – 5000 |
 | Ejecuciones | 300 – 500 |
-| Semilla | 42 / 442 |
+| Semilla | 442 |
 
 ## Ejecución
 

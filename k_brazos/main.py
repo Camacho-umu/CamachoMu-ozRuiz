@@ -114,7 +114,7 @@ def main():
     Main function to set up and execute comparative experiments.
     """
 
-    seed = 42
+    seed = 442
     np.random.seed(seed)
 
     k = 10 # Número de brazos

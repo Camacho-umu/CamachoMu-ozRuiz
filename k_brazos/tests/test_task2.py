@@ -11,7 +11,7 @@ from arms import ArmNormal, Bandit
 
 # ====== TEST 1: epsilon=0 fix ======
 print('=== TEST 1: Fix epsilon=0 ===')
-np.random.seed(42)
+np.random.seed(442)
 k = 5
 algo = EpsilonGreedy(k=k, epsilon=0)
 bandit_test = Bandit(arms=ArmNormal.generate_arms(k))
@@ -29,7 +29,7 @@ print(f'  OK: todos los {k} brazos fueron probados al menos una vez')
 # ====== TEST 2: run_experiment ======
 print()
 print('=== TEST 2: run_experiment returns (rewards, optimal_sel, regret, arm_stats) ===')
-np.random.seed(42)
+np.random.seed(442)
 k = 10
 steps = 100
 runs = 50
@@ -80,13 +80,13 @@ print()
 print('=== TEST 5: Bernoulli & Binomial arms with experiment ===')
 from arms import ArmBernoulli, ArmBinomial
 
-np.random.seed(42)
+np.random.seed(442)
 bandit_bern = Bandit(arms=ArmBernoulli.generate_arms(5))
 algos_bern = [EpsilonGreedy(k=5, epsilon=0.1)]
 r, o, reg, stats = run_experiment(bandit_bern, algos_bern, steps=50, runs=20)
 print(f'  Bernoulli: rewards shape={r.shape}, regret final={reg[0,-1]:.2f}')
 
-np.random.seed(42)
+np.random.seed(442)
 bandit_bin = Bandit(arms=ArmBinomial.generate_arms(5, n=100))
 algos_bin = [EpsilonGreedy(k=5, epsilon=0.1)]
 r, o, reg, stats = run_experiment(bandit_bin, algos_bin, steps=50, runs=20)

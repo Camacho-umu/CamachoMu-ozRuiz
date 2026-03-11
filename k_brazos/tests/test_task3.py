@@ -12,7 +12,7 @@ from main import run_experiment
 
 def test_ucb1_basic():
     """UCB1: selecciona todos los brazos en la fase de inicialización."""
-    np.random.seed(42)
+    np.random.seed(442)
     k = 5
     algo = UCB1(k=k, c=2**0.5)
     bandit = Bandit(arms=ArmNormal.generate_arms(k))
@@ -30,7 +30,7 @@ def test_ucb1_basic():
 
 def test_ucb1_exploits_best():
     """UCB1: tras suficientes pasos, converge al brazo óptimo."""
-    np.random.seed(42)
+    np.random.seed(442)
     k = 5
     algo = UCB1(k=k, c=2**0.5)
     bandit = Bandit(arms=ArmNormal.generate_arms(k))
@@ -48,7 +48,7 @@ def test_ucb1_exploits_best():
 
 def test_ucb1_reset():
     """UCB1: reset limpia todo el estado."""
-    np.random.seed(42)
+    np.random.seed(442)
     algo = UCB1(k=5, c=1.0)
     algo.counts[0] = 10
     algo.values[0] = 5.0
@@ -62,7 +62,7 @@ def test_ucb1_reset():
 
 def test_softmax_basic():
     """Softmax: selecciona todos los brazos en la fase de inicialización."""
-    np.random.seed(42)
+    np.random.seed(442)
     k = 5
     algo = Softmax(k=k, tau=1.0)
     bandit = Bandit(arms=ArmNormal.generate_arms(k))
@@ -79,7 +79,7 @@ def test_softmax_basic():
 
 def test_softmax_exploits_best():
     """Softmax con tau bajo: converge al brazo óptimo."""
-    np.random.seed(42)
+    np.random.seed(442)
     k = 5
     algo = Softmax(k=k, tau=0.1)  # Temperatura baja → más explotación
     bandit = Bandit(arms=ArmNormal.generate_arms(k))
@@ -96,7 +96,7 @@ def test_softmax_exploits_best():
 
 def test_softmax_high_tau_explores():
     """Softmax con tau alto: distribución más uniforme (más exploración)."""
-    np.random.seed(42)
+    np.random.seed(442)
     k = 5
     algo = Softmax(k=k, tau=100.0)  # Temperatura muy alta → casi uniforme
     bandit = Bandit(arms=ArmNormal.generate_arms(k))
@@ -115,7 +115,7 @@ def test_softmax_high_tau_explores():
 
 def test_run_experiment_with_all():
     """run_experiment funciona con los 3 tipos de algoritmos juntos."""
-    np.random.seed(42)
+    np.random.seed(442)
     k = 5
     bandit = Bandit(arms=ArmNormal.generate_arms(k))
     
