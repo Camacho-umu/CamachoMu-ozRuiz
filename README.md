@@ -18,6 +18,7 @@ Informe técnico de la asignatura Extensiones de Machine Learning del Máster en
 
 ```
 CamachoMuñozRuiz/
+├── informe.pdf               # Informe técnico
 ├── README.md                 # Este fichero
 ├── k_brazos/                 # Parte 1: Bandido de k-brazos
 │   ├── src/                  # Código fuente (.py)
