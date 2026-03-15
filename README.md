@@ -34,11 +34,15 @@ CamachoMuñozRuiz/
 │   ├── estudio_comparativo_binomial.ipynb  # Estudio específico: distribución Binomial
 │   └── README.md
 └── Entornos_Complejos/       # Parte 2: Aprendizaje por Refuerzo
-    ├── src/                  # Código fuente
-    ├── tests/                # Tests
-    ├── docs/                 # Documentación
-    ├── data/                 # Datos
-    └── README.md
+    ├── Metodos_aproximados/
+    │   ├── videos/
+    │   ├── DQN.ipynb
+    │   └── SEMIGRADIENTSARSA.ipynb
+    ├── Metodos_tabulares/
+    │   ├── MonteCarloOn_policyOff_policy_presentacion.ipynb
+    │   └── TD_Diferencias_Temporales_presentacion.ipynb
+    ├── main.ipynb
+    └── README.md  
 ```
 
 ## Instalación y Uso
