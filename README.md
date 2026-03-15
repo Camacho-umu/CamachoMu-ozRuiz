@@ -59,3 +59,14 @@ Cada notebook incluye las celdas iniciales necesarias para clonar el repositorio
 - **Librerías principales:** NumPy, Matplotlib, Seaborn
 - **Entorno de notebooks:** Jupyter / Google Colab
 - **Control de versiones:** Git + GitHub
+
+## Declaración sobre el uso de Inteligencia Artificial
+
+En este proyecto se han utilizado herramientas de Inteligencia Artificial como asistencia técnica para optimizar el flujo de trabajo y la redacción. Detallamos su uso a continuación:
+
+* **Asistencia en programación (GitHub Copilot / LLMs):** Se han utilizado como apoyo durante la escritura de código en Python. Su uso se ha centrado en el autocompletado de estructuras repetitivas, sugerencias de refactorización para mejorar la legibilidad y asistencia en la resolución de errores puntuales (como la prevención de inestabilidad numérica en el algoritmo Softmax).
+* **Documentación y maquetación (ChatGPT / Claude / Gemini):** Se han empleado modelos de lenguaje para la revisión ortográfica y gramatical, la estructuración de la documentación en formato Markdown y como soporte para la maquetación del informe técnico final en LaTeX.
+
+Es importante destacar que el uso de estas herramientas se ha limitado estrictamente a labores de asistencia. El diseño experimental, la implementación de la lógica algorítmica, el barrido de hiperparámetros y el análisis crítico de los resultados son trabajo original de los autores. 
+
+Todo el código y texto generado con apoyo de IA ha sido revisado, probado y validado por el equipo, asumiendo la total responsabilidad sobre el correcto funcionamiento y la precisión del resultado final del proyecto.
