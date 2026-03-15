@@ -2,7 +2,7 @@
 
 ## Información
 
-- **Alumnos:** Camacho, [Nombre1]; Muñoz, [Nombre2]; Ruiz, [Nombre3]
+- **Alumnos:** Camacho, Francisco Jesus; Muñoz, Adrian; Ruiz, Rodrigo
 - **Asignatura:** Extensiones de Machine Learning
 - **Curso:** 2025/2026
 - **Grupo:** CamachoMuñozRuiz
