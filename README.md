@@ -48,18 +48,10 @@ CamachoMuñozRuiz/
 
 ## Instalación y Uso
 
-### Ejecución en Google Colab (recomendado)
+### Ejecución en Google Colab
 
 Cada notebook incluye las celdas iniciales necesarias para clonar el repositorio e instalar las dependencias automáticamente.
 
-### Ejecución local
-
-```bash
-git clone https://github.com/Camacho-umu/CamachoMu-ozRuiz.git
-cd CamachoMu-ozRuiz/k_brazos
-pip install numpy matplotlib seaborn
-python main.py
-```
 
 ## Tecnologías Utilizadas
 
